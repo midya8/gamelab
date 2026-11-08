@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1100" viewBox="0 0 1120 1100">
+<rect width="1120" height="1100" fill="#f4f1ed"/><rect x="16" y="16" width="1088" height="1068" rx="18" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#292929}.muted{fill:#666}</style>
+<text x="42" y="58" font-size="26" font-weight="700">GameLab / worst regrets must share one payoff table</text>
+<text x="42" y="89" font-size="17" class="muted">Exact fixed-policy box audits. Row maximizes; column minimizes. Supplied intervals, not confidence intervals.</text>
+<text x="42" y="137" font-size="21" font-weight="700">1 One uncertain entry makes separate worst deviations incompatible</text>
+<text x="42" y="170" font-size="17" >Both policies choose action 0. Only A[0,0] varies from 0 to 2; all other payoffs are 1.</text>
+<text x="70" y="212" font-size="16" font-weight="700">Lower matrix</text>
+<rect x="70" y="229" width="61" height="41" rx="4" fill="#d8ede7"/>
+<text x="94" y="256" font-size="18" id="cell-lower-0-0" data-value="0">0</text>
+<rect x="138" y="229" width="61" height="41" rx="4" fill="#ececec"/>
+<text x="162" y="256" font-size="18" id="cell-lower-0-1" data-value="1">1</text>
+<rect x="70" y="277" width="61" height="41" rx="4" fill="#ececec"/>
+<text x="94" y="304" font-size="18" id="cell-lower-1-0" data-value="1">1</text>
+<rect x="138" y="277" width="61" height="41" rx="4" fill="#ececec"/>
+<text x="162" y="304" font-size="18" id="cell-lower-1-1" data-value="1">1</text>
+<text x="315" y="212" font-size="16" font-weight="700">Upper matrix</text>
+<rect x="315" y="229" width="61" height="41" rx="4" fill="#d8ede7"/>
+<text x="339" y="256" font-size="18" id="cell-upper-0-0" data-value="2">2</text>
+<rect x="383" y="229" width="61" height="41" rx="4" fill="#ececec"/>
+<text x="407" y="256" font-size="18" id="cell-upper-0-1" data-value="1">1</text>
+<rect x="315" y="277" width="61" height="41" rx="4" fill="#ececec"/>
+<text x="339" y="304" font-size="18" id="cell-upper-1-0" data-value="1">1</text>
+<rect x="383" y="277" width="61" height="41" rx="4" fill="#ececec"/>
+<text x="407" y="304" font-size="18" id="cell-upper-1-1" data-value="1">1</text>
+<text x="570" y="241" font-size="16" >Exact shared-table worst gap</text>
+<text x="1015" y="241" font-size="18" id="cell-shared-gap" data-value="1">1</text>
+<text x="570" y="279" font-size="16" >Sum of separate worst deviations</text>
+<text x="1015" y="279" font-size="18" id="cell-separate" data-value="2">2</text>
+<text x="570" y="317" font-size="16" >Attainable game-value range width</text>
+<text x="1015" y="317" font-size="18" id="cell-value-width" data-value="0">0</text>
+<text x="570" y="355" font-size="16" >Robust-security pair worst gap</text>
+<text x="1015" y="355" font-size="18" id="cell-robust-gap" data-value="0">0</text>
+<text x="42" y="400" font-size="16" font-weight="700">A[0,0]</text>
+<text x="220" y="400" font-size="16" font-weight="700">Row deviation gain</text>
+<text x="475" y="400" font-size="16" font-weight="700">Column deviation gain</text>
+<text x="800" y="400" font-size="16" font-weight="700">Joint gap</text>
+<text x="65" y="443" font-size="18" id="cell-probe-0-entry" data-value="0">0</text>
+<text x="285" y="443" font-size="18" id="cell-probe-0-row" data-value="1">1</text>
+<text x="560" y="443" font-size="18" id="cell-probe-0-column" data-value="0">0</text>
+<text x="835" y="443" font-size="18" id="cell-probe-0-gap" data-value="1">1</text>
+<text x="65" y="486" font-size="18" id="cell-probe-1-entry" data-value="1">1</text>
+<text x="285" y="486" font-size="18" id="cell-probe-1-row" data-value="0">0</text>
+<text x="560" y="486" font-size="18" id="cell-probe-1-column" data-value="0">0</text>
+<text x="835" y="486" font-size="18" id="cell-probe-1-gap" data-value="0">0</text>
+<text x="65" y="529" font-size="18" id="cell-probe-2-entry" data-value="2">2</text>
+<text x="285" y="529" font-size="18" id="cell-probe-2-row" data-value="0">0</text>
+<text x="560" y="529" font-size="18" id="cell-probe-2-column" data-value="1">1</text>
+<text x="835" y="529" font-size="18" id="cell-probe-2-gap" data-value="1">1</text>
+<text x="42" y="580" font-size="17" >Row worst needs A[0,0]=0; column worst needs A[0,0]=2. No single table attains both.</text>
+<text x="42" y="613" font-size="17" >The game value is always 1. Lower-game row / upper-game column policies are robust equilibria here.</text>
+<text x="42" y="675" font-size="21" font-weight="700">2 A fully variable 2x2 box still has shared-entry cancellation</text>
+<text x="42" y="709" font-size="17" >All four entries range from 0 to 1. Both fixed policies mix [1/2,1/2].</text>
+<text x="55" y="753" font-size="16" font-weight="700">Exact shared worst gap</text>
+<text x="105" y="790" font-size="18" id="cell-full-gap" data-value="1/2">1/2</text>
+<text x="390" y="753" font-size="16" font-weight="700">Separate worst sum</text>
+<text x="440" y="790" font-size="18" id="cell-full-separate" data-value="1">1</text>
+<text x="750" y="753" font-size="16" font-weight="700">Value range width</text>
+<text x="800" y="790" font-size="18" id="cell-full-width" data-value="1">1</text>
+<text x="42" y="832" font-size="17" >For reply pair (0,0), the coefficient of A[0,0] is 1/2 - 1/2 = 0, not two independent choices.</text>
+<text x="42" y="885" font-size="21" font-weight="700">3 A one-action game can have uncertain value but zero exploitability</text>
+<text x="42" y="922" font-size="17" >Single entry [-50,50]: value range width</text>
+<text x="450" y="922" font-size="18" id="cell-singleton-width" data-value="100">100</text>
+<text x="580" y="922" font-size="17" >but every pair gap is</text>
+<text x="800" y="922" font-size="18" id="cell-singleton-gap" data-value="0">0</text>
+<text x="42" y="971" font-size="16" >Every pure reply pair retains signed coefficients, endpoint choices, contributions and an attaining matrix.</text>
+<text x="42" y="1006" font-size="15" class="muted">Endpoint games certify attainable value extrema and separate robust security, not an optimal worst-gap pair.</text>
+<text x="42" y="1037" font-size="15" class="muted">No coupled uncertainty, statistical coverage, payoff-estimation or general-sum claim.</text>
+<metadata id="report-zlib-base64">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</metadata></svg>
