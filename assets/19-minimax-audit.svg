@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1210" viewBox="0 0 1120 1210">
+<rect width="1120" height="1210" fill="#f4f1ed"/><rect x="16" y="16" width="1088" height="1178" rx="18" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#292929}.muted{fill:#666}</style>
+<text x="42" y="58" font-size="26" font-weight="700">GameLab / minimax value is unique; the strategy may not be</text>
+<text x="42" y="88" font-size="17" class="muted">Exact small zero-sum games: row maximizes payoff, column minimizes. No training or payoff sampling.</text>
+<text x="42" y="134" font-size="21" font-weight="700">1 Cyclic scores defeat a single-policy ranking</text>
+<text x="65" y="172" font-size="15" class="muted">Column action</text>
+<text x="130" y="200" font-size="16" >0</text>
+<text x="222" y="200" font-size="16" >1</text>
+<text x="314" y="200" font-size="16" >2</text>
+<text x="65" y="239" font-size="16" >0</text>
+<rect x="100" y="213" width="85" height="47" rx="4" fill="#ececec"/>
+<text x="131" y="243" font-size="18" id="cell-matrix-0-0" data-value="0">0</text>
+<rect x="192" y="213" width="85" height="47" rx="4" fill="#f3dfd4"/>
+<text x="223" y="243" font-size="18" id="cell-matrix-0-1" data-value="-1">-1</text>
+<rect x="284" y="213" width="85" height="47" rx="4" fill="#d8ede7"/>
+<text x="315" y="243" font-size="18" id="cell-matrix-0-2" data-value="1">1</text>
+<text x="65" y="294" font-size="16" >1</text>
+<rect x="100" y="268" width="85" height="47" rx="4" fill="#d8ede7"/>
+<text x="131" y="298" font-size="18" id="cell-matrix-1-0" data-value="1">1</text>
+<rect x="192" y="268" width="85" height="47" rx="4" fill="#ececec"/>
+<text x="223" y="298" font-size="18" id="cell-matrix-1-1" data-value="0">0</text>
+<rect x="284" y="268" width="85" height="47" rx="4" fill="#f3dfd4"/>
+<text x="315" y="298" font-size="18" id="cell-matrix-1-2" data-value="-1">-1</text>
+<text x="65" y="349" font-size="16" >2</text>
+<rect x="100" y="323" width="85" height="47" rx="4" fill="#f3dfd4"/>
+<text x="131" y="353" font-size="18" id="cell-matrix-2-0" data-value="-1">-1</text>
+<rect x="192" y="323" width="85" height="47" rx="4" fill="#d8ede7"/>
+<text x="223" y="353" font-size="18" id="cell-matrix-2-1" data-value="1">1</text>
+<rect x="284" y="323" width="85" height="47" rx="4" fill="#ececec"/>
+<text x="315" y="353" font-size="18" id="cell-matrix-2-2" data-value="0">0</text>
+<text x="470" y="213" font-size="17" >Game value</text>
+<text x="770" y="213" font-size="18" id="cell-value" data-value="0">0</text>
+<text x="470" y="254" font-size="17" >Pure row security</text>
+<text x="770" y="254" font-size="18" id="cell-row_maximin" data-value="-1">-1</text>
+<text x="470" y="295" font-size="17" >Pure column security</text>
+<text x="770" y="295" font-size="18" id="cell-column_minimax" data-value="1">1</text>
+<text x="470" y="337" font-size="17" >Mixed equilibrium: each action has probability 1/3.</text>
+<text x="470" y="368" font-size="17" >Both always choose action 0: payoff 0, deviation gap 2.</text>
+<text x="42" y="421" font-size="21" font-weight="700">2 Duplicate actions create a continuum of optimal policies</text>
+<text x="42" y="450" font-size="16" class="muted">Rows 0 and 1 duplicate [1,-1]; row 2 is [-1,1]; row 3 is dominated [-2,-2].</text>
+<text x="60" y="491" font-size="16" font-weight="700">Row</text>
+<text x="170" y="491" font-size="16" font-weight="700">Attainable probability range</text>
+<text x="620" y="491" font-size="16" font-weight="700">Optimal vertex 0</text>
+<text x="835" y="491" font-size="16" font-weight="700">Optimal vertex 1</text>
+<text x="65" y="533" font-size="17" >0</text>
+<line x1="180" y1="527" x2="530" y2="527" stroke="#ddd" stroke-width="8"/>
+<line id="range-0" data-min="0" data-max="1/2" x1="180.000" y1="527" x2="355.000" y2="527" stroke="#127e71" stroke-width="8"/>
+<circle id="range-0-minimum" cx="180.000" cy="527" r="5" fill="#127e71"/>
+<circle id="range-0-maximum" cx="355.000" cy="527" r="5" fill="#127e71"/>
+<text x="640" y="533" font-size="18" id="cell-vertex-0-0" data-value="0">0</text>
+<text x="855" y="533" font-size="18" id="cell-vertex-1-0" data-value="1/2">1/2</text>
+<text x="65" y="580" font-size="17" >1</text>
+<line x1="180" y1="574" x2="530" y2="574" stroke="#ddd" stroke-width="8"/>
+<line id="range-1" data-min="0" data-max="1/2" x1="180.000" y1="574" x2="355.000" y2="574" stroke="#127e71" stroke-width="8"/>
+<circle id="range-1-minimum" cx="180.000" cy="574" r="5" fill="#127e71"/>
+<circle id="range-1-maximum" cx="355.000" cy="574" r="5" fill="#127e71"/>
+<text x="640" y="580" font-size="18" id="cell-vertex-0-1" data-value="1/2">1/2</text>
+<text x="855" y="580" font-size="18" id="cell-vertex-1-1" data-value="0">0</text>
+<text x="65" y="627" font-size="17" >2</text>
+<line x1="180" y1="621" x2="530" y2="621" stroke="#ddd" stroke-width="8"/>
+<line id="range-2" data-min="1/2" data-max="1/2" x1="355.000" y1="621" x2="355.000" y2="621" stroke="#127e71" stroke-width="8"/>
+<circle id="range-2-minimum" cx="355.000" cy="621" r="5" fill="#127e71"/>
+<circle id="range-2-maximum" cx="355.000" cy="621" r="5" fill="#127e71"/>
+<text x="640" y="627" font-size="18" id="cell-vertex-0-2" data-value="1/2">1/2</text>
+<text x="855" y="627" font-size="18" id="cell-vertex-1-2" data-value="1/2">1/2</text>
+<text x="65" y="674" font-size="17" >3</text>
+<line x1="180" y1="668" x2="530" y2="668" stroke="#ddd" stroke-width="8"/>
+<line id="range-3" data-min="0" data-max="0" x1="180.000" y1="668" x2="180.000" y2="668" stroke="#127e71" stroke-width="8"/>
+<circle id="range-3-minimum" cx="180.000" cy="668" r="5" fill="#127e71"/>
+<circle id="range-3-maximum" cx="180.000" cy="668" r="5" fill="#127e71"/>
+<text x="640" y="674" font-size="18" id="cell-vertex-0-3" data-value="0">0</text>
+<text x="855" y="674" font-size="18" id="cell-vertex-1-3" data-value="0">0</text>
+<text x="180" y="722" font-size="14" >0</text>
+<text x="350" y="722" font-size="14" >1/2</text>
+<text x="525" y="722" font-size="14" >1</text>
+<text x="42" y="760" font-size="17" >The full face is p0+p1=1/2, p2=1/2, p3=0. Coordinate ranges are not independent.</text>
+<text x="42" y="791" font-size="17" >Representative (vertex average): [1/4,1/4,1/2,0]. No claim that this policy is uniquely preferred.</text>
+<text x="42" y="846" font-size="21" font-weight="700">3 Tiny payoff changes can flip the unique optimal action</text>
+<text x="42" y="876" font-size="16" class="muted">Two row actions, one column action. Before: [0,epsilon]; after: [epsilon,0].</text>
+<text x="52" y="920" font-size="16" font-weight="700">epsilon</text>
+<text x="350" y="920" font-size="16" font-weight="700">Value change</text>
+<text x="630" y="920" font-size="16" font-weight="700">Old pair deviation gap after change</text>
+<text x="52" y="953" font-size="18" id="cell-epsilon" data-value="1/1000000000000">1/1000000000000</text>
+<text x="350" y="953" font-size="18" id="cell-value-change" data-value="0">0</text>
+<text x="630" y="953" font-size="18" id="cell-transfer-gap" data-value="1/1000000000000">1/1000000000000</text>
+<text x="42" y="999" font-size="17" >Optimal row policy flips [0,1] to [1,0], despite unchanged value and a 10^-12 entry change.</text>
+<text x="42" y="1032" font-size="17" >Value changes by at most epsilon; an old equilibrium pair has deviation gap at most 2*epsilon.</text>
+<text x="42" y="1080" font-size="16" >Every active basis, singular/infeasible outcome, slack, optimal vertex and coordinate witness is exported.</text>
+<text x="42" y="1120" font-size="15" class="muted">Developed finite tables only. No general-sum games, learned opponent, unique-policy or scalability claim.</text>
+<text x="42" y="1150" font-size="15" class="muted">Perturbation bounds are deterministic, not confidence intervals for unknown empirical scores.</text>
+<metadata id="report-zlib-base64">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</metadata></svg>
