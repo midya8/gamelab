@@ -2,6 +2,8 @@
 
 Exact-rational minimax, degeneracy and perturbation certificates for small zero-sum AI score tables.
 
+**Interval extension:** [one shared payoff table, exact box worst-gap certificates](INTERVALS.md). Separately maximized regrets can be incompatible. 53 tests, two reproducible figures and six-module/six-command wheel parity; the original base audit below remains reproducible.
+
 ![Minimax audit](assets/minimax-audit.svg)
 
 A score table can be cyclic: one policy defeats a second, loses to a third, and has no meaningful single-policy ranking. Even when a zero-sum game's value is unique, its optimal randomized policy can have an entire continuum of choices. GameLab solves the supplied finite game, shows both players' security witnesses, enumerates all optimal strategy vertices and exposes what a chosen policy pair leaves exploitable.
@@ -76,3 +78,11 @@ The five-module installed wheel matches all four complete CLI JSON outputs outsi
 Only `1..4` actions per player are supported. At most `choose(8,4)=70` active bases are tried per side. The solver uses exact rationals and does not prune dominated actions or guess around singular bases. Exact input integers/strings/Fractions have at most 512-bit numerator/denominator components and 160-character strings. Floats, booleans and nonfinite values are rejected. Strategies must normalize exactly. Internal elimination can grow large; no speed/scalability claim is made. JSON input is capped at 200,000 bytes, requires `schema_version:1`, rejects unknown/duplicate keys and invalid UTF-8. See [the full schema, proof and attribution](DESIGN.md) and [complete developed audit](examples/demo.json).
 
 No general-sum, correlated equilibrium, extensive-form/hidden-information game, stochastic training, no-regret convergence, incomplete payoff estimation or learned-opponent claim is made. A finite score table is the assumption, not a verified description of the world.
+
+## Shared-table interval extension
+
+![Interval audit](assets/interval-audit.svg)
+
+`interval_audit(lower, upper, row_strategy, column_strategy)` uses signed support coefficients for every pure reply pair to compute the exact worst joint deviation gap over a full Cartesian payoff box. It retains every coefficient, endpoint choice, contribution and attaining matrix, plus separately maximized deviation gains, expected-payoff extrema, complete endpoint game solves and separate robust-security policies. `python -m gamelab interval-demo` and `python -m gamelab intervals examples/intervals-input.json` emit the complete audits.
+
+The shared-entry control has worst joint gap one but separate worst-regret sum two. A full 2x2 unit box with uniform fixed policies has joint worst gap 1/2 versus separate sum one. A one-action game has value-range width 100 but gap zero. These are deterministic supplied intervals, not confidence intervals or statistical independence assumptions. The robust-security pair is not claimed to minimize worst joint gap. [Proof, strict schema, full test details, caveats and attribution](INTERVALS.md).
