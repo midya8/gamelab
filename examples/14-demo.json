@@ -1,0 +1,7479 @@
+{
+  "constant_game": {
+    "certificate": {
+      "column_complementarity_products": [
+        "0",
+        "0",
+        "0"
+      ],
+      "column_probability_sum": "1",
+      "column_slacks": [
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_value": "2",
+      "duality_gap": "0",
+      "primal_value": "2",
+      "row_complementarity_products": [
+        "0",
+        "0"
+      ],
+      "row_probability_sum": "1",
+      "row_slacks": [
+        "0",
+        "0"
+      ]
+    },
+    "column_negative_game": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            1,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            3
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            1,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            3
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            2,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            2,
+            3
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        }
+      ],
+      "basis_budget": 10,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1",
+          "maximum_vertex": 2,
+          "minimum": "0",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1",
+          "maximum_vertex": 1,
+          "minimum": "0",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 2,
+          "maximum": "1",
+          "maximum_vertex": 0,
+          "minimum": "0",
+          "minimum_vertex": 1
+        }
+      ],
+      "feasible_basis_count": 6,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_2"
+        },
+        {
+          "coefficients": [
+            "-2",
+            "-2",
+            "-2",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-2",
+            "-2",
+            "-2",
+            "-1"
+          ],
+          "label": "opponent_1"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "0",
+            "1"
+          ],
+          "value": "-2"
+        },
+        {
+          "active": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              2,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1",
+            "0"
+          ],
+          "value": "-2"
+        },
+        {
+          "active": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0",
+            "0"
+          ],
+          "value": "-2"
+        }
+      ],
+      "representative": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 4,
+      "unique_optimal_strategy": false,
+      "value": "-2",
+      "vertices": [
+        {
+          "active": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "0",
+            "1"
+          ],
+          "value": "-2"
+        },
+        {
+          "active": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              2,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1",
+            "0"
+          ],
+          "value": "-2"
+        },
+        {
+          "active": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0",
+            "0"
+          ],
+          "value": "-2"
+        }
+      ]
+    },
+    "columns": 3,
+    "equilibrium_audit": {
+      "column_best_replies": [
+        0,
+        1,
+        2
+      ],
+      "column_deviation_gain": "0",
+      "column_pure_payoffs": [
+        "2",
+        "2",
+        "2"
+      ],
+      "duality_gap": "0",
+      "gap_equals_sum_deviation_gains": true,
+      "is_equilibrium": true,
+      "lower_security": "2",
+      "payoff": "2",
+      "row_best_replies": [
+        0,
+        1
+      ],
+      "row_deviation_gain": "0",
+      "row_pure_payoffs": [
+        "2",
+        "2"
+      ],
+      "upper_security": "2"
+    },
+    "payoffs": [
+      [
+        "2",
+        "2",
+        "2"
+      ],
+      [
+        "2",
+        "2",
+        "2"
+      ]
+    ],
+    "pure_strategy_controls": {
+      "column_minimax": "2",
+      "row_maximin": "2",
+      "saddles": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "row": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_2"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_2"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            2,
+            3
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            2
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            2,
+            4
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            2
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            3,
+            4
+          ],
+          "basis_labels": [
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            2
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        }
+      ],
+      "basis_budget": 10,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1",
+          "maximum_vertex": 1,
+          "minimum": "0",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1",
+          "maximum_vertex": 0,
+          "minimum": "0",
+          "minimum_vertex": 1
+        }
+      ],
+      "feasible_basis_count": 6,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "2",
+            "2",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "2",
+            "2",
+            "-1"
+          ],
+          "label": "opponent_1"
+        },
+        {
+          "coefficients": [
+            "2",
+            "2",
+            "-1"
+          ],
+          "label": "opponent_2"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "2"
+        },
+        {
+          "active": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "2"
+        }
+      ],
+      "representative": [
+        "1/2",
+        "1/2"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 4,
+      "unique_optimal_strategy": false,
+      "value": "2",
+      "vertices": [
+        {
+          "active": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "2"
+        },
+        {
+          "active": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "2"
+        }
+      ]
+    },
+    "rows": 2,
+    "schema_version": 1,
+    "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+    "value": "2"
+  },
+  "cyclic": {
+    "certificate": {
+      "column_complementarity_products": [
+        "0",
+        "0",
+        "0"
+      ],
+      "column_probability_sum": "1",
+      "column_slacks": [
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_value": "0",
+      "duality_gap": "0",
+      "primal_value": "0",
+      "row_complementarity_products": [
+        "0",
+        "0",
+        "0"
+      ],
+      "row_probability_sum": "1",
+      "row_slacks": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "column_negative_game": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "2",
+            "1"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            1,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "-2",
+            "0",
+            "-1"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3,
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            1,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_2"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "-1",
+            "1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "-2"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4,
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "-1"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_2"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "2",
+            "1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "2/3",
+            "1/3",
+            "0",
+            "0",
+            "-1"
+          ],
+          "solution": [
+            "0",
+            "2/3",
+            "1/3",
+            "1/3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "-3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1/3",
+            "2/3",
+            "-1/3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            1,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "1"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            1,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_2"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "-1",
+            "-2",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3,
+            4
+          ]
+        },
+        {
+          "basis": [
+            1,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "2/3",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "1"
+          ],
+          "solution": [
+            "2/3",
+            "0",
+            "1/3",
+            "-1/3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            1,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "-3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1/3",
+            "0",
+            "2/3",
+            "-1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/3",
+            "0",
+            "2/3",
+            "1/3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            2,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            2,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "2/3",
+            "1/3",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          "solution": [
+            "2/3",
+            "1/3",
+            "0",
+            "1/3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            2,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/3",
+            "2/3",
+            "0",
+            "-1/3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            3,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "-9",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        }
+      ],
+      "basis_budget": 20,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/3",
+          "maximum_vertex": 0,
+          "minimum": "1/3",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/3",
+          "maximum_vertex": 0,
+          "minimum": "1/3",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 2,
+          "maximum": "1/3",
+          "maximum_vertex": 0,
+          "minimum": "1/3",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 7,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_2"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "-1",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "0",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_1"
+        },
+        {
+          "coefficients": [
+            "1",
+            "-1",
+            "0",
+            "-1"
+          ],
+          "label": "opponent_2"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "value": "0"
+        }
+      ],
+      "representative": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 4,
+      "unique_optimal_strategy": true,
+      "value": "0",
+      "vertices": [
+        {
+          "active": [
+            0,
+            1,
+            3
+          ],
+          "bases": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "2",
+            "1"
+          ],
+          "strategy": [
+            "0",
+            "0",
+            "1"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            0,
+            3,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              3,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1/3",
+            "2/3"
+          ],
+          "value": "-1/3"
+        },
+        {
+          "active": [
+            0,
+            2,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              2,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "2",
+            "1",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1",
+            "0"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            2,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              2,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/3",
+            "2/3",
+            "0"
+          ],
+          "value": "-1/3"
+        },
+        {
+          "active": [
+            1,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              3,
+              4
+            ]
+          ],
+          "slacks": [
+            "2/3",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "1"
+          ],
+          "strategy": [
+            "2/3",
+            "0",
+            "1/3"
+          ],
+          "value": "-1/3"
+        },
+        {
+          "active": [
+            1,
+            2,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "1",
+            "0",
+            "0"
+          ],
+          "value": "-1"
+        }
+      ]
+    },
+    "columns": 3,
+    "equilibrium_audit": {
+      "column_best_replies": [
+        0,
+        1,
+        2
+      ],
+      "column_deviation_gain": "0",
+      "column_pure_payoffs": [
+        "0",
+        "0",
+        "0"
+      ],
+      "duality_gap": "0",
+      "gap_equals_sum_deviation_gains": true,
+      "is_equilibrium": true,
+      "lower_security": "0",
+      "payoff": "0",
+      "row_best_replies": [
+        0,
+        1,
+        2
+      ],
+      "row_deviation_gain": "0",
+      "row_pure_payoffs": [
+        "0",
+        "0",
+        "0"
+      ],
+      "upper_security": "0"
+    },
+    "payoffs": [
+      [
+        "0",
+        "-1",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "-1",
+        "1",
+        "0"
+      ]
+    ],
+    "pure_strategy_controls": {
+      "column_minimax": "1",
+      "row_maximin": "-1",
+      "saddles": []
+    },
+    "row": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "2",
+            "1"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            1,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "-2",
+            "0",
+            "-1"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3,
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            1,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_2"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "-1",
+            "1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "-2"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4,
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "-1"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_2"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "2",
+            "1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "2/3",
+            "1/3",
+            "0",
+            "0",
+            "-1"
+          ],
+          "solution": [
+            "0",
+            "2/3",
+            "1/3",
+            "1/3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "-3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "0",
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1/3",
+            "2/3",
+            "-1/3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            1,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "1"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            1,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_2"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "-1",
+            "-2",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3,
+            4
+          ]
+        },
+        {
+          "basis": [
+            1,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "2/3",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "1"
+          ],
+          "solution": [
+            "2/3",
+            "0",
+            "1/3",
+            "-1/3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            1,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "-3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1/3",
+            "0",
+            "2/3",
+            "-1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/3",
+            "0",
+            "2/3",
+            "1/3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            2,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            2,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "2/3",
+            "1/3",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          "solution": [
+            "2/3",
+            "1/3",
+            "0",
+            "1/3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            2,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_2",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "3",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/3",
+            "2/3",
+            "0",
+            "-1/3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            3,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "-9",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "slacks": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        }
+      ],
+      "basis_budget": 20,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/3",
+          "maximum_vertex": 0,
+          "minimum": "1/3",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/3",
+          "maximum_vertex": 0,
+          "minimum": "1/3",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 2,
+          "maximum": "1/3",
+          "maximum_vertex": 0,
+          "minimum": "1/3",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 7,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_2"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "-1",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "0",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_1"
+        },
+        {
+          "coefficients": [
+            "1",
+            "-1",
+            "0",
+            "-1"
+          ],
+          "label": "opponent_2"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "value": "0"
+        }
+      ],
+      "representative": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 4,
+      "unique_optimal_strategy": true,
+      "value": "0",
+      "vertices": [
+        {
+          "active": [
+            0,
+            1,
+            3
+          ],
+          "bases": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "2",
+            "1"
+          ],
+          "strategy": [
+            "0",
+            "0",
+            "1"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            0,
+            3,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              3,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1/3",
+            "2/3"
+          ],
+          "value": "-1/3"
+        },
+        {
+          "active": [
+            0,
+            2,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              2,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "2",
+            "1",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1",
+            "0"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            2,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              2,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/3",
+            "2/3",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/3",
+            "2/3",
+            "0"
+          ],
+          "value": "-1/3"
+        },
+        {
+          "active": [
+            1,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              3,
+              4
+            ]
+          ],
+          "slacks": [
+            "2/3",
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "1"
+          ],
+          "strategy": [
+            "2/3",
+            "0",
+            "1/3"
+          ],
+          "value": "-1/3"
+        },
+        {
+          "active": [
+            1,
+            2,
+            4
+          ],
+          "bases": [
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "1",
+            "0",
+            "0"
+          ],
+          "value": "-1"
+        }
+      ]
+    },
+    "rows": 3,
+    "schema_version": 1,
+    "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+    "value": "0"
+  },
+  "degenerate_rectangular": {
+    "certificate": {
+      "column_complementarity_products": [
+        "0",
+        "0"
+      ],
+      "column_probability_sum": "1",
+      "column_slacks": [
+        "0",
+        "0"
+      ],
+      "dual_value": "0",
+      "duality_gap": "0",
+      "primal_value": "0",
+      "row_complementarity_products": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "row_probability_sum": "1",
+      "row_slacks": [
+        "0",
+        "0",
+        "0",
+        "2"
+      ]
+    },
+    "column_negative_game": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            0,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            0,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_2"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "2",
+            "2",
+            "0",
+            "3"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_3"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "-1",
+            "-1",
+            "-3",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "2"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "basis": [
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2",
+            "3"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2",
+            "3"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_2"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "-2",
+            "-2",
+            "0",
+            "1"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2,
+            3
+          ]
+        },
+        {
+          "basis": [
+            1,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_3"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "-3",
+            "-3",
+            "-1",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "2"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "basis": [
+            2,
+            3
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            2,
+            4
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_2"
+          ],
+          "determinant": "-4",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            2,
+            5
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_3"
+          ],
+          "determinant": "-2",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "-1/2",
+            "3/2",
+            "0",
+            "0",
+            "-4",
+            "0"
+          ],
+          "solution": [
+            "-1/2",
+            "3/2",
+            "2"
+          ],
+          "status": "infeasible",
+          "violated": [
+            0,
+            4
+          ]
+        },
+        {
+          "basis": [
+            3,
+            4
+          ],
+          "basis_labels": [
+            "opponent_1",
+            "opponent_2"
+          ],
+          "determinant": "-4",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            3,
+            5
+          ],
+          "basis_labels": [
+            "opponent_1",
+            "opponent_3"
+          ],
+          "determinant": "-2",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "-1/2",
+            "3/2",
+            "0",
+            "0",
+            "-4",
+            "0"
+          ],
+          "solution": [
+            "-1/2",
+            "3/2",
+            "2"
+          ],
+          "status": "infeasible",
+          "violated": [
+            0,
+            4
+          ]
+        },
+        {
+          "basis": [
+            4,
+            5
+          ],
+          "basis_labels": [
+            "opponent_2",
+            "opponent_3"
+          ],
+          "determinant": "2",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "3/2",
+            "-1/2",
+            "-4",
+            "-4",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "3/2",
+            "-1/2",
+            "2"
+          ],
+          "status": "infeasible",
+          "violated": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "basis_budget": 15,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 5,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_1"
+        },
+        {
+          "coefficients": [
+            "1",
+            "-1",
+            "-1"
+          ],
+          "label": "opponent_2"
+        },
+        {
+          "coefficients": [
+            "2",
+            "2",
+            "-1"
+          ],
+          "label": "opponent_3"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "0"
+        }
+      ],
+      "representative": [
+        "1/2",
+        "1/2"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 2,
+      "unique_optimal_strategy": true,
+      "value": "0",
+      "vertices": [
+        {
+          "active": [
+            0,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "2",
+            "2",
+            "0",
+            "3"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            2,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            1,
+            2,
+            3
+          ],
+          "bases": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2",
+            "3"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "-1"
+        }
+      ]
+    },
+    "columns": 2,
+    "equilibrium_audit": {
+      "column_best_replies": [
+        0,
+        1
+      ],
+      "column_deviation_gain": "0",
+      "column_pure_payoffs": [
+        "0",
+        "0"
+      ],
+      "duality_gap": "0",
+      "gap_equals_sum_deviation_gains": true,
+      "is_equilibrium": true,
+      "lower_security": "0",
+      "payoff": "0",
+      "row_best_replies": [
+        0,
+        1,
+        2
+      ],
+      "row_deviation_gain": "0",
+      "row_pure_payoffs": [
+        "0",
+        "0",
+        "0",
+        "-2"
+      ],
+      "upper_security": "0"
+    },
+    "payoffs": [
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "-1",
+        "1"
+      ],
+      [
+        "-2",
+        "-2"
+      ]
+    ],
+    "pure_strategy_controls": {
+      "column_minimax": "1",
+      "row_maximin": "-1",
+      "saddles": []
+    },
+    "row": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_2",
+            "probability_3"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank": 4,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_2",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_2",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_3",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "probability_3",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "-2",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            4
+          ]
+        },
+        {
+          "basis": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-2",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "probability_3",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "-2"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            5
+          ]
+        },
+        {
+          "basis": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "probability_3",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "2",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_2",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-2",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_3",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "4",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "probability_3",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-2"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            5
+          ]
+        },
+        {
+          "basis": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "probability_3",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_2",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "2",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_1",
+            "probability_3",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-4",
+          "pivots": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rank": 5,
+          "slacks": [
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "basis_labels": [
+            "probability_2",
+            "probability_3",
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "rank": 4,
+          "solution": null,
+          "status": "singular"
+        }
+      ],
+      "basis_budget": 15,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/2",
+          "maximum_vertex": 1,
+          "minimum": "0",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "0",
+          "minimum_vertex": 1
+        },
+        {
+          "coordinate": 2,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 3,
+          "maximum": "0",
+          "maximum_vertex": 0,
+          "minimum": "0",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 10,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_2"
+        },
+        {
+          "coefficients": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_3"
+        },
+        {
+          "coefficients": [
+            "1",
+            "1",
+            "-1",
+            "-2",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "-1",
+            "1",
+            "-2",
+            "-1"
+          ],
+          "label": "opponent_1"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              1,
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          "value": "0"
+        }
+      ],
+      "representative": [
+        "1/4",
+        "1/4",
+        "1/2",
+        "0"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 2,
+      "unique_optimal_strategy": false,
+      "value": "0",
+      "vertices": [
+        {
+          "active": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              1,
+              2,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              5
+            ],
+            [
+              0,
+              1,
+              4,
+              5
+            ],
+            [
+              0,
+              2,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "value": "-2"
+        },
+        {
+          "active": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "bases": [
+            [
+              0,
+              1,
+              3,
+              4
+            ]
+          ],
+          "slacks": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "bases": [
+            [
+              0,
+              2,
+              3,
+              5
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "2",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "bases": [
+            [
+              1,
+              3,
+              4,
+              5
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "bases": [
+            [
+              1,
+              2,
+              3,
+              5
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "value": "-1"
+        }
+      ]
+    },
+    "rows": 4,
+    "schema_version": 1,
+    "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+    "value": "0"
+  },
+  "matching_pennies": {
+    "certificate": {
+      "column_complementarity_products": [
+        "0",
+        "0"
+      ],
+      "column_probability_sum": "1",
+      "column_slacks": [
+        "0",
+        "0"
+      ],
+      "dual_value": "0",
+      "duality_gap": "0",
+      "primal_value": "0",
+      "row_complementarity_products": [
+        "0",
+        "0"
+      ],
+      "row_probability_sum": "1",
+      "row_slacks": [
+        "0",
+        "0"
+      ]
+    },
+    "column_negative_game": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "-2"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            0,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "2",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "-2",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2
+          ]
+        },
+        {
+          "basis": [
+            2,
+            3
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-4",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        }
+      ],
+      "basis_budget": 6,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 3,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "1",
+            "-1",
+            "-1"
+          ],
+          "label": "opponent_1"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "0"
+        }
+      ],
+      "representative": [
+        "1/2",
+        "1/2"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 1,
+      "unique_optimal_strategy": true,
+      "value": "0",
+      "vertices": [
+        {
+          "active": [
+            0,
+            3
+          ],
+          "bases": [
+            [
+              0,
+              3
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "2",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            1,
+            2
+          ],
+          "bases": [
+            [
+              1,
+              2
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "-1"
+        }
+      ]
+    },
+    "columns": 2,
+    "equilibrium_audit": {
+      "column_best_replies": [
+        0,
+        1
+      ],
+      "column_deviation_gain": "0",
+      "column_pure_payoffs": [
+        "0",
+        "0"
+      ],
+      "duality_gap": "0",
+      "gap_equals_sum_deviation_gains": true,
+      "is_equilibrium": true,
+      "lower_security": "0",
+      "payoff": "0",
+      "row_best_replies": [
+        0,
+        1
+      ],
+      "row_deviation_gain": "0",
+      "row_pure_payoffs": [
+        "0",
+        "0"
+      ],
+      "upper_security": "0"
+    },
+    "payoffs": [
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "-1",
+        "1"
+      ]
+    ],
+    "pure_strategy_controls": {
+      "column_minimax": "1",
+      "row_maximin": "-1",
+      "saddles": []
+    },
+    "row": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "-2",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2
+          ]
+        },
+        {
+          "basis": [
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "-2"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "2",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            2,
+            3
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "4",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        }
+      ],
+      "basis_budget": 6,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 3,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "1",
+            "-1",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_1"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "0"
+        }
+      ],
+      "representative": [
+        "1/2",
+        "1/2"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 1,
+      "unique_optimal_strategy": true,
+      "value": "0",
+      "vertices": [
+        {
+          "active": [
+            0,
+            2
+          ],
+          "bases": [
+            [
+              0,
+              2
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "-1"
+        },
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "0"
+        },
+        {
+          "active": [
+            1,
+            3
+          ],
+          "bases": [
+            [
+              1,
+              3
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "2",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "-1"
+        }
+      ]
+    },
+    "rows": 2,
+    "schema_version": 1,
+    "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+    "value": "0"
+  },
+  "mixed_degenerate_pair": {
+    "column_best_replies": [
+      0,
+      1
+    ],
+    "column_deviation_gain": "0",
+    "column_exploitability": "0",
+    "column_pure_payoffs": [
+      "0",
+      "0"
+    ],
+    "column_strategy": [
+      "1/2",
+      "1/2"
+    ],
+    "duality_gap": "0",
+    "game_value": "0",
+    "gap_equals_sum_deviation_gains": true,
+    "is_equilibrium": true,
+    "lower_security": "0",
+    "payoff": "0",
+    "payoffs": [
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "-1",
+        "1"
+      ],
+      [
+        "-2",
+        "-2"
+      ]
+    ],
+    "row_best_replies": [
+      0,
+      1,
+      2
+    ],
+    "row_deviation_gain": "0",
+    "row_exploitability": "0",
+    "row_pure_payoffs": [
+      "0",
+      "0",
+      "0",
+      "-2"
+    ],
+    "row_strategy": [
+      "1/8",
+      "3/8",
+      "1/2",
+      "0"
+    ],
+    "schema_version": 1,
+    "scope": "sum convention: pair exploitability equals sum of each player security loss, not half this sum",
+    "upper_security": "0"
+  },
+  "nonzero_value": {
+    "certificate": {
+      "column_complementarity_products": [
+        "0",
+        "0"
+      ],
+      "column_probability_sum": "1",
+      "column_slacks": [
+        "0",
+        "0"
+      ],
+      "dual_value": "3/2",
+      "duality_gap": "0",
+      "primal_value": "3/2",
+      "row_complementarity_products": [
+        "0",
+        "0"
+      ],
+      "row_probability_sum": "1",
+      "row_slacks": [
+        "0",
+        "0"
+      ]
+    },
+    "column_negative_game": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "-2"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            0,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "2",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "-2"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "2"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "-3"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "-2",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "-1"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2
+          ]
+        },
+        {
+          "basis": [
+            2,
+            3
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "-4",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/2",
+            "1/2",
+            "-3/2"
+          ],
+          "status": "feasible",
+          "violated": []
+        }
+      ],
+      "basis_budget": 6,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "1/2",
+          "maximum_vertex": 0,
+          "minimum": "1/2",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 3,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "-3",
+            "0",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "-1",
+            "-2",
+            "-1"
+          ],
+          "label": "opponent_1"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "-3/2"
+        }
+      ],
+      "representative": [
+        "1/2",
+        "1/2"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 1,
+      "unique_optimal_strategy": true,
+      "value": "-3/2",
+      "vertices": [
+        {
+          "active": [
+            0,
+            3
+          ],
+          "bases": [
+            [
+              0,
+              3
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "2",
+            "0"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "-2"
+        },
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/2",
+            "1/2"
+          ],
+          "value": "-3/2"
+        },
+        {
+          "active": [
+            1,
+            2
+          ],
+          "bases": [
+            [
+              1,
+              2
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "2"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "-3"
+        }
+      ]
+    },
+    "columns": 2,
+    "equilibrium_audit": {
+      "column_best_replies": [
+        0,
+        1
+      ],
+      "column_deviation_gain": "0",
+      "column_pure_payoffs": [
+        "3/2",
+        "3/2"
+      ],
+      "duality_gap": "0",
+      "gap_equals_sum_deviation_gains": true,
+      "is_equilibrium": true,
+      "lower_security": "3/2",
+      "payoff": "3/2",
+      "row_best_replies": [
+        0,
+        1
+      ],
+      "row_deviation_gain": "0",
+      "row_pure_payoffs": [
+        "3/2",
+        "3/2"
+      ],
+      "upper_security": "3/2"
+    },
+    "payoffs": [
+      [
+        "3",
+        "0"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "pure_strategy_controls": {
+      "column_minimax": "2",
+      "row_maximin": "1",
+      "saddles": []
+    },
+    "row": {
+      "attempts": [
+        {
+          "basis": [
+            0,
+            1
+          ],
+          "basis_labels": [
+            "probability_0",
+            "probability_1"
+          ],
+          "determinant": "0",
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "solution": null,
+          "status": "singular"
+        },
+        {
+          "basis": [
+            0,
+            2
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_0"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "1"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            0,
+            3
+          ],
+          "basis_labels": [
+            "probability_0",
+            "opponent_1"
+          ],
+          "determinant": "1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "0",
+            "1",
+            "-1",
+            "0"
+          ],
+          "solution": [
+            "0",
+            "1",
+            "2"
+          ],
+          "status": "infeasible",
+          "violated": [
+            2
+          ]
+        },
+        {
+          "basis": [
+            1,
+            2
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_0"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "0",
+            "-3"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "3"
+          ],
+          "status": "infeasible",
+          "violated": [
+            3
+          ]
+        },
+        {
+          "basis": [
+            1,
+            3
+          ],
+          "basis_labels": [
+            "probability_1",
+            "opponent_1"
+          ],
+          "determinant": "-1",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1",
+            "0",
+            "3",
+            "0"
+          ],
+          "solution": [
+            "1",
+            "0",
+            "0"
+          ],
+          "status": "feasible",
+          "violated": []
+        },
+        {
+          "basis": [
+            2,
+            3
+          ],
+          "basis_labels": [
+            "opponent_0",
+            "opponent_1"
+          ],
+          "determinant": "4",
+          "pivots": [
+            0,
+            1,
+            2
+          ],
+          "rank": 3,
+          "slacks": [
+            "1/4",
+            "3/4",
+            "0",
+            "0"
+          ],
+          "solution": [
+            "1/4",
+            "3/4",
+            "3/2"
+          ],
+          "status": "feasible",
+          "violated": []
+        }
+      ],
+      "basis_budget": 6,
+      "coordinate_ranges": [
+        {
+          "coordinate": 0,
+          "maximum": "1/4",
+          "maximum_vertex": 0,
+          "minimum": "1/4",
+          "minimum_vertex": 0
+        },
+        {
+          "coordinate": 1,
+          "maximum": "3/4",
+          "maximum_vertex": 0,
+          "minimum": "3/4",
+          "minimum_vertex": 0
+        }
+      ],
+      "feasible_basis_count": 3,
+      "inequalities": [
+        {
+          "coefficients": [
+            "1",
+            "0",
+            "0"
+          ],
+          "label": "probability_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "1",
+            "0"
+          ],
+          "label": "probability_1"
+        },
+        {
+          "coefficients": [
+            "3",
+            "1",
+            "-1"
+          ],
+          "label": "opponent_0"
+        },
+        {
+          "coefficients": [
+            "0",
+            "2",
+            "-1"
+          ],
+          "label": "opponent_1"
+        }
+      ],
+      "optimal_vertices": [
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/4",
+            "3/4",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/4",
+            "3/4"
+          ],
+          "value": "3/2"
+        }
+      ],
+      "representative": [
+        "1/4",
+        "3/4"
+      ],
+      "representative_rule": "equal average of all distinct optimal vertices",
+      "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+      "singular_basis_count": 1,
+      "unique_optimal_strategy": true,
+      "value": "3/2",
+      "vertices": [
+        {
+          "active": [
+            0,
+            2
+          ],
+          "bases": [
+            [
+              0,
+              2
+            ]
+          ],
+          "slacks": [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "strategy": [
+            "0",
+            "1"
+          ],
+          "value": "1"
+        },
+        {
+          "active": [
+            2,
+            3
+          ],
+          "bases": [
+            [
+              2,
+              3
+            ]
+          ],
+          "slacks": [
+            "1/4",
+            "3/4",
+            "0",
+            "0"
+          ],
+          "strategy": [
+            "1/4",
+            "3/4"
+          ],
+          "value": "3/2"
+        },
+        {
+          "active": [
+            1,
+            3
+          ],
+          "bases": [
+            [
+              1,
+              3
+            ]
+          ],
+          "slacks": [
+            "1",
+            "0",
+            "3",
+            "0"
+          ],
+          "strategy": [
+            "1",
+            "0"
+          ],
+          "value": "0"
+        }
+      ]
+    },
+    "rows": 2,
+    "schema_version": 1,
+    "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+    "value": "3/2"
+  },
+  "perturbation_flip": {
+    "changed": {
+      "certificate": {
+        "column_complementarity_products": [
+          "0"
+        ],
+        "column_probability_sum": "1",
+        "column_slacks": [
+          "0"
+        ],
+        "dual_value": "1/1000000000000",
+        "duality_gap": "0",
+        "primal_value": "1/1000000000000",
+        "row_complementarity_products": [
+          "0",
+          "0"
+        ],
+        "row_probability_sum": "1",
+        "row_slacks": [
+          "0",
+          "1/1000000000000"
+        ]
+      },
+      "column_negative_game": {
+        "attempts": [
+          {
+            "basis": [
+              0
+            ],
+            "basis_labels": [
+              "probability_0"
+            ],
+            "determinant": "0",
+            "pivots": [
+              0
+            ],
+            "rank": 1,
+            "solution": null,
+            "status": "singular"
+          },
+          {
+            "basis": [
+              1
+            ],
+            "basis_labels": [
+              "opponent_0"
+            ],
+            "determinant": "-1",
+            "pivots": [
+              0,
+              1
+            ],
+            "rank": 2,
+            "slacks": [
+              "1",
+              "0",
+              "1/1000000000000"
+            ],
+            "solution": [
+              "1",
+              "-1/1000000000000"
+            ],
+            "status": "feasible",
+            "violated": []
+          },
+          {
+            "basis": [
+              2
+            ],
+            "basis_labels": [
+              "opponent_1"
+            ],
+            "determinant": "-1",
+            "pivots": [
+              0,
+              1
+            ],
+            "rank": 2,
+            "slacks": [
+              "1",
+              "-1/1000000000000",
+              "0"
+            ],
+            "solution": [
+              "1",
+              "0"
+            ],
+            "status": "infeasible",
+            "violated": [
+              1
+            ]
+          }
+        ],
+        "basis_budget": 3,
+        "coordinate_ranges": [
+          {
+            "coordinate": 0,
+            "maximum": "1",
+            "maximum_vertex": 0,
+            "minimum": "1",
+            "minimum_vertex": 0
+          }
+        ],
+        "feasible_basis_count": 1,
+        "inequalities": [
+          {
+            "coefficients": [
+              "1",
+              "0"
+            ],
+            "label": "probability_0"
+          },
+          {
+            "coefficients": [
+              "-1/1000000000000",
+              "-1"
+            ],
+            "label": "opponent_0"
+          },
+          {
+            "coefficients": [
+              "0",
+              "-1"
+            ],
+            "label": "opponent_1"
+          }
+        ],
+        "optimal_vertices": [
+          {
+            "active": [
+              1
+            ],
+            "bases": [
+              [
+                1
+              ]
+            ],
+            "slacks": [
+              "1",
+              "0",
+              "1/1000000000000"
+            ],
+            "strategy": [
+              "1"
+            ],
+            "value": "-1/1000000000000"
+          }
+        ],
+        "representative": [
+          "1"
+        ],
+        "representative_rule": "equal average of all distinct optimal vertices",
+        "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+        "singular_basis_count": 1,
+        "unique_optimal_strategy": true,
+        "value": "-1/1000000000000",
+        "vertices": [
+          {
+            "active": [
+              1
+            ],
+            "bases": [
+              [
+                1
+              ]
+            ],
+            "slacks": [
+              "1",
+              "0",
+              "1/1000000000000"
+            ],
+            "strategy": [
+              "1"
+            ],
+            "value": "-1/1000000000000"
+          }
+        ]
+      },
+      "columns": 1,
+      "equilibrium_audit": {
+        "column_best_replies": [
+          0
+        ],
+        "column_deviation_gain": "0",
+        "column_pure_payoffs": [
+          "1/1000000000000"
+        ],
+        "duality_gap": "0",
+        "gap_equals_sum_deviation_gains": true,
+        "is_equilibrium": true,
+        "lower_security": "1/1000000000000",
+        "payoff": "1/1000000000000",
+        "row_best_replies": [
+          0
+        ],
+        "row_deviation_gain": "0",
+        "row_pure_payoffs": [
+          "1/1000000000000",
+          "0"
+        ],
+        "upper_security": "1/1000000000000"
+      },
+      "payoffs": [
+        [
+          "1/1000000000000"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "pure_strategy_controls": {
+        "column_minimax": "1/1000000000000",
+        "row_maximin": "1/1000000000000",
+        "saddles": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "row": {
+        "attempts": [
+          {
+            "basis": [
+              0,
+              1
+            ],
+            "basis_labels": [
+              "probability_0",
+              "probability_1"
+            ],
+            "determinant": "0",
+            "pivots": [
+              0,
+              1
+            ],
+            "rank": 2,
+            "solution": null,
+            "status": "singular"
+          },
+          {
+            "basis": [
+              0,
+              2
+            ],
+            "basis_labels": [
+              "probability_0",
+              "opponent_0"
+            ],
+            "determinant": "1",
+            "pivots": [
+              0,
+              1,
+              2
+            ],
+            "rank": 3,
+            "slacks": [
+              "0",
+              "1",
+              "0"
+            ],
+            "solution": [
+              "0",
+              "1",
+              "0"
+            ],
+            "status": "feasible",
+            "violated": []
+          },
+          {
+            "basis": [
+              1,
+              2
+            ],
+            "basis_labels": [
+              "probability_1",
+              "opponent_0"
+            ],
+            "determinant": "-1",
+            "pivots": [
+              0,
+              1,
+              2
+            ],
+            "rank": 3,
+            "slacks": [
+              "1",
+              "0",
+              "0"
+            ],
+            "solution": [
+              "1",
+              "0",
+              "1/1000000000000"
+            ],
+            "status": "feasible",
+            "violated": []
+          }
+        ],
+        "basis_budget": 3,
+        "coordinate_ranges": [
+          {
+            "coordinate": 0,
+            "maximum": "1",
+            "maximum_vertex": 0,
+            "minimum": "1",
+            "minimum_vertex": 0
+          },
+          {
+            "coordinate": 1,
+            "maximum": "0",
+            "maximum_vertex": 0,
+            "minimum": "0",
+            "minimum_vertex": 0
+          }
+        ],
+        "feasible_basis_count": 2,
+        "inequalities": [
+          {
+            "coefficients": [
+              "1",
+              "0",
+              "0"
+            ],
+            "label": "probability_0"
+          },
+          {
+            "coefficients": [
+              "0",
+              "1",
+              "0"
+            ],
+            "label": "probability_1"
+          },
+          {
+            "coefficients": [
+              "1/1000000000000",
+              "0",
+              "-1"
+            ],
+            "label": "opponent_0"
+          }
+        ],
+        "optimal_vertices": [
+          {
+            "active": [
+              1,
+              2
+            ],
+            "bases": [
+              [
+                1,
+                2
+              ]
+            ],
+            "slacks": [
+              "1",
+              "0",
+              "0"
+            ],
+            "strategy": [
+              "1",
+              "0"
+            ],
+            "value": "1/1000000000000"
+          }
+        ],
+        "representative": [
+          "1",
+          "0"
+        ],
+        "representative_rule": "equal average of all distinct optimal vertices",
+        "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+        "singular_basis_count": 1,
+        "unique_optimal_strategy": true,
+        "value": "1/1000000000000",
+        "vertices": [
+          {
+            "active": [
+              0,
+              2
+            ],
+            "bases": [
+              [
+                0,
+                2
+              ]
+            ],
+            "slacks": [
+              "0",
+              "1",
+              "0"
+            ],
+            "strategy": [
+              "0",
+              "1"
+            ],
+            "value": "0"
+          },
+          {
+            "active": [
+              1,
+              2
+            ],
+            "bases": [
+              [
+                1,
+                2
+              ]
+            ],
+            "slacks": [
+              "1",
+              "0",
+              "0"
+            ],
+            "strategy": [
+              "1",
+              "0"
+            ],
+            "value": "1/1000000000000"
+          }
+        ]
+      },
+      "rows": 2,
+      "schema_version": 1,
+      "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+      "value": "1/1000000000000"
+    },
+    "column_transfer_exploitability": "0",
+    "column_transfer_slack": "1/500000000000",
+    "entry_changes": [
+      [
+        "1/1000000000000"
+      ],
+      [
+        "-1/1000000000000"
+      ]
+    ],
+    "epsilon": "1/1000000000000",
+    "epsilon_witness_entries": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "individual_transfer_bound": "1/500000000000",
+    "old_pair_in_changed_game": {
+      "column_best_replies": [
+        0
+      ],
+      "column_deviation_gain": "0",
+      "column_pure_payoffs": [
+        "0"
+      ],
+      "duality_gap": "1/1000000000000",
+      "gap_equals_sum_deviation_gains": true,
+      "is_equilibrium": false,
+      "lower_security": "0",
+      "payoff": "0",
+      "row_best_replies": [
+        0
+      ],
+      "row_deviation_gain": "1/1000000000000",
+      "row_pure_payoffs": [
+        "1/1000000000000",
+        "0"
+      ],
+      "upper_security": "1/1000000000000"
+    },
+    "original": {
+      "certificate": {
+        "column_complementarity_products": [
+          "0"
+        ],
+        "column_probability_sum": "1",
+        "column_slacks": [
+          "0"
+        ],
+        "dual_value": "1/1000000000000",
+        "duality_gap": "0",
+        "primal_value": "1/1000000000000",
+        "row_complementarity_products": [
+          "0",
+          "0"
+        ],
+        "row_probability_sum": "1",
+        "row_slacks": [
+          "1/1000000000000",
+          "0"
+        ]
+      },
+      "column_negative_game": {
+        "attempts": [
+          {
+            "basis": [
+              0
+            ],
+            "basis_labels": [
+              "probability_0"
+            ],
+            "determinant": "0",
+            "pivots": [
+              0
+            ],
+            "rank": 1,
+            "solution": null,
+            "status": "singular"
+          },
+          {
+            "basis": [
+              1
+            ],
+            "basis_labels": [
+              "opponent_0"
+            ],
+            "determinant": "-1",
+            "pivots": [
+              0,
+              1
+            ],
+            "rank": 2,
+            "slacks": [
+              "1",
+              "0",
+              "-1/1000000000000"
+            ],
+            "solution": [
+              "1",
+              "0"
+            ],
+            "status": "infeasible",
+            "violated": [
+              2
+            ]
+          },
+          {
+            "basis": [
+              2
+            ],
+            "basis_labels": [
+              "opponent_1"
+            ],
+            "determinant": "-1",
+            "pivots": [
+              0,
+              1
+            ],
+            "rank": 2,
+            "slacks": [
+              "1",
+              "1/1000000000000",
+              "0"
+            ],
+            "solution": [
+              "1",
+              "-1/1000000000000"
+            ],
+            "status": "feasible",
+            "violated": []
+          }
+        ],
+        "basis_budget": 3,
+        "coordinate_ranges": [
+          {
+            "coordinate": 0,
+            "maximum": "1",
+            "maximum_vertex": 0,
+            "minimum": "1",
+            "minimum_vertex": 0
+          }
+        ],
+        "feasible_basis_count": 1,
+        "inequalities": [
+          {
+            "coefficients": [
+              "1",
+              "0"
+            ],
+            "label": "probability_0"
+          },
+          {
+            "coefficients": [
+              "0",
+              "-1"
+            ],
+            "label": "opponent_0"
+          },
+          {
+            "coefficients": [
+              "-1/1000000000000",
+              "-1"
+            ],
+            "label": "opponent_1"
+          }
+        ],
+        "optimal_vertices": [
+          {
+            "active": [
+              2
+            ],
+            "bases": [
+              [
+                2
+              ]
+            ],
+            "slacks": [
+              "1",
+              "1/1000000000000",
+              "0"
+            ],
+            "strategy": [
+              "1"
+            ],
+            "value": "-1/1000000000000"
+          }
+        ],
+        "representative": [
+          "1"
+        ],
+        "representative_rule": "equal average of all distinct optimal vertices",
+        "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+        "singular_basis_count": 1,
+        "unique_optimal_strategy": true,
+        "value": "-1/1000000000000",
+        "vertices": [
+          {
+            "active": [
+              2
+            ],
+            "bases": [
+              [
+                2
+              ]
+            ],
+            "slacks": [
+              "1",
+              "1/1000000000000",
+              "0"
+            ],
+            "strategy": [
+              "1"
+            ],
+            "value": "-1/1000000000000"
+          }
+        ]
+      },
+      "columns": 1,
+      "equilibrium_audit": {
+        "column_best_replies": [
+          0
+        ],
+        "column_deviation_gain": "0",
+        "column_pure_payoffs": [
+          "1/1000000000000"
+        ],
+        "duality_gap": "0",
+        "gap_equals_sum_deviation_gains": true,
+        "is_equilibrium": true,
+        "lower_security": "1/1000000000000",
+        "payoff": "1/1000000000000",
+        "row_best_replies": [
+          1
+        ],
+        "row_deviation_gain": "0",
+        "row_pure_payoffs": [
+          "0",
+          "1/1000000000000"
+        ],
+        "upper_security": "1/1000000000000"
+      },
+      "payoffs": [
+        [
+          "0"
+        ],
+        [
+          "1/1000000000000"
+        ]
+      ],
+      "pure_strategy_controls": {
+        "column_minimax": "1/1000000000000",
+        "row_maximin": "1/1000000000000",
+        "saddles": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "row": {
+        "attempts": [
+          {
+            "basis": [
+              0,
+              1
+            ],
+            "basis_labels": [
+              "probability_0",
+              "probability_1"
+            ],
+            "determinant": "0",
+            "pivots": [
+              0,
+              1
+            ],
+            "rank": 2,
+            "solution": null,
+            "status": "singular"
+          },
+          {
+            "basis": [
+              0,
+              2
+            ],
+            "basis_labels": [
+              "probability_0",
+              "opponent_0"
+            ],
+            "determinant": "1",
+            "pivots": [
+              0,
+              1,
+              2
+            ],
+            "rank": 3,
+            "slacks": [
+              "0",
+              "1",
+              "0"
+            ],
+            "solution": [
+              "0",
+              "1",
+              "1/1000000000000"
+            ],
+            "status": "feasible",
+            "violated": []
+          },
+          {
+            "basis": [
+              1,
+              2
+            ],
+            "basis_labels": [
+              "probability_1",
+              "opponent_0"
+            ],
+            "determinant": "-1",
+            "pivots": [
+              0,
+              1,
+              2
+            ],
+            "rank": 3,
+            "slacks": [
+              "1",
+              "0",
+              "0"
+            ],
+            "solution": [
+              "1",
+              "0",
+              "0"
+            ],
+            "status": "feasible",
+            "violated": []
+          }
+        ],
+        "basis_budget": 3,
+        "coordinate_ranges": [
+          {
+            "coordinate": 0,
+            "maximum": "0",
+            "maximum_vertex": 0,
+            "minimum": "0",
+            "minimum_vertex": 0
+          },
+          {
+            "coordinate": 1,
+            "maximum": "1",
+            "maximum_vertex": 0,
+            "minimum": "1",
+            "minimum_vertex": 0
+          }
+        ],
+        "feasible_basis_count": 2,
+        "inequalities": [
+          {
+            "coefficients": [
+              "1",
+              "0",
+              "0"
+            ],
+            "label": "probability_0"
+          },
+          {
+            "coefficients": [
+              "0",
+              "1",
+              "0"
+            ],
+            "label": "probability_1"
+          },
+          {
+            "coefficients": [
+              "0",
+              "1/1000000000000",
+              "-1"
+            ],
+            "label": "opponent_0"
+          }
+        ],
+        "optimal_vertices": [
+          {
+            "active": [
+              0,
+              2
+            ],
+            "bases": [
+              [
+                0,
+                2
+              ]
+            ],
+            "slacks": [
+              "0",
+              "1",
+              "0"
+            ],
+            "strategy": [
+              "0",
+              "1"
+            ],
+            "value": "1/1000000000000"
+          }
+        ],
+        "representative": [
+          "0",
+          "1"
+        ],
+        "representative_rule": "equal average of all distinct optimal vertices",
+        "scope": "convex hull of optimal vertices is the full optimal strategy set; coordinate ranges alone are not that set",
+        "singular_basis_count": 1,
+        "unique_optimal_strategy": true,
+        "value": "1/1000000000000",
+        "vertices": [
+          {
+            "active": [
+              0,
+              2
+            ],
+            "bases": [
+              [
+                0,
+                2
+              ]
+            ],
+            "slacks": [
+              "0",
+              "1",
+              "0"
+            ],
+            "strategy": [
+              "0",
+              "1"
+            ],
+            "value": "1/1000000000000"
+          },
+          {
+            "active": [
+              1,
+              2
+            ],
+            "bases": [
+              [
+                1,
+                2
+              ]
+            ],
+            "slacks": [
+              "1",
+              "0",
+              "0"
+            ],
+            "strategy": [
+              "1",
+              "0"
+            ],
+            "value": "0"
+          }
+        ]
+      },
+      "rows": 2,
+      "schema_version": 1,
+      "scope": "supplied finite zero-sum payoff matrix only; row maximizes, column minimizes; no general-sum or empirical payoff guarantee",
+      "value": "1/1000000000000"
+    },
+    "pair_transfer_bound": "1/500000000000",
+    "pair_transfer_slack": "1/1000000000000",
+    "row_transfer_exploitability": "1/1000000000000",
+    "row_transfer_slack": "1/1000000000000",
+    "schema_version": 1,
+    "scope": "deterministic entrywise perturbation only, not statistical uncertainty; strategy coordinates need not change continuously",
+    "value_change": "0",
+    "value_shift_slack": "1/1000000000000"
+  },
+  "pure_policy_failure": {
+    "column_best_replies": [
+      1
+    ],
+    "column_deviation_gain": "1",
+    "column_exploitability": "1",
+    "column_pure_payoffs": [
+      "0",
+      "-1",
+      "1"
+    ],
+    "column_strategy": [
+      "1",
+      "0",
+      "0"
+    ],
+    "duality_gap": "2",
+    "game_value": "0",
+    "gap_equals_sum_deviation_gains": true,
+    "is_equilibrium": false,
+    "lower_security": "-1",
+    "payoff": "0",
+    "payoffs": [
+      [
+        "0",
+        "-1",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "-1",
+        "1",
+        "0"
+      ]
+    ],
+    "row_best_replies": [
+      1
+    ],
+    "row_deviation_gain": "1",
+    "row_exploitability": "1",
+    "row_pure_payoffs": [
+      "0",
+      "1",
+      "-1"
+    ],
+    "row_strategy": [
+      "1",
+      "0",
+      "0"
+    ],
+    "schema_version": 1,
+    "scope": "sum convention: pair exploitability equals sum of each player security loss, not half this sum",
+    "upper_security": "1"
+  },
+  "schema_version": 1,
+  "scope": "developed exact matrices; no trained agent tournament or empirical generalization guarantee"
+}
