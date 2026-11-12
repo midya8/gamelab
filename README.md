@@ -1,8 +1,13 @@
 # GameLab
 
-Exact-rational minimax, degeneracy and perturbation certificates for small zero-sum AI score tables.
+GameLab solves supplied zero-sum payoff tables with at most four actions per player. It uses exact rational arithmetic to show both players' security witnesses, every optimal strategy vertex and the exploitability of a chosen policy pair.
 
-**Interval extension:** [one shared payoff table, exact box worst-gap certificates](INTERVALS.md). Separately maximized regrets can be incompatible. 53 tests, two reproducible figures and six-module/six-command wheel parity; the original base audit below remains reproducible.
+There are two input forms:
+
+- A fixed payoff matrix: solve the game, audit policies or compare two matrices under a bounded perturbation. See [DESIGN.md](DESIGN.md).
+- A Cartesian payoff box: compute the worst joint deviation gap using one shared table, keeping it separate from separately maximized regrets. See [INTERVALS.md](INTERVALS.md).
+
+The full suite has 53 tests, two reproducible figures and six-module/six-command installed-wheel parity.
 
 ![Minimax audit](assets/minimax-audit.svg)
 
@@ -21,7 +26,7 @@ python -m unittest discover -s tests -v
 python examples/render_demo.py --check
 ```
 
-No API key, network call, third-party runtime package or paid service is needed. `pip install .` installs the importable package. All four modes emit complete JSON. Invalid input exits two with empty stdout.
+No API key, network call, third-party runtime package or paid service is needed. `pip install .` installs the importable package. The four fixed-matrix modes emit complete JSON; the two interval modes are described below. Invalid input exits two with empty stdout.
 
 ```python
 from gamelab import solve, audit, perturbation
@@ -37,7 +42,7 @@ rps = [[0,-1,1],[1,0,-1],[-1,1,0]]
 print(audit(rps, [1,0,0], [1,0,0])["duality_gap"])  # '2'
 ```
 
-## What is certified
+## What the fixed-matrix report contains
 
 The input `A` is the **row player's payoff**. The row player maximizes `x^T A y`; the column player minimizes it and receives its negative. Randomizations are independent. Rows/columns are ordered action identifiers, not model names inferred from files.
 
@@ -71,9 +76,9 @@ It also solves for game value `v`. Row exploitability is `v-min_j(x^T A)_j`; col
 
 ## Verification and limits
 
-37 tests include all 81 `2x2` integer tables with entries in `{-1,0,1}`, checked against a separate one-dimensional lower-envelope construction; independent permutation-determinant references and every basis residual/slack/status on cyclic/duplicate/constant/nonzero tables; all optimal vertex cross-pairs and convex combinations; attaining coordinate witnesses; all 81 grid policy pairs on a nonzero game; exact affine/permutation/negative-transpose invariances; perturbation equality/near-bound/discontinuity and all 16 signed perturbations of matching pennies; full `4x4` capacity; no input/RNG mutation; parsing/shape/strategy caps and strict CLI failures. Four SVG tests check all 23 numeric cells, four range segments, eight endpoint markers, complete compressed report metadata, hidden-basis tampering and byte-exact regeneration.
+The original fixed-matrix suite has 37 tests, retained in the current total of 53. They include all 81 `2x2` integer tables with entries in `{-1,0,1}`, checked against a separate one-dimensional lower-envelope construction; independent permutation-determinant references and every basis residual/slack/status on cyclic/duplicate/constant/nonzero tables; all optimal vertex cross-pairs and convex combinations; attaining coordinate witnesses; all 81 grid policy pairs on a nonzero game; exact affine/permutation/negative-transpose invariances; perturbation equality/near-bound/discontinuity and all 16 signed perturbations of matching pennies; full `4x4` capacity; no input/RNG mutation; parsing/shape/strategy caps and strict CLI failures. Four SVG tests check all 23 numeric cells, four range segments, eight endpoint markers, complete compressed report metadata, hidden-basis tampering and byte-exact regeneration.
 
-The five-module installed wheel matches all four complete CLI JSON outputs outside checkout. CI runs Python 3.10-3.13 plus a separate package parity job, reproduces demo JSON and regenerates the SVG.
+The fixed-matrix installed checks match all four complete CLI JSON outputs and five original modules outside checkout; the interval extension adds a sixth module and two commands. CI runs Python 3.10-3.13 plus a separate package parity job, reproduces demo JSON and regenerates the SVG.
 
 Only `1..4` actions per player are supported. At most `choose(8,4)=70` active bases are tried per side. The solver uses exact rationals and does not prune dominated actions or guess around singular bases. Exact input integers/strings/Fractions have at most 512-bit numerator/denominator components and 160-character strings. Floats, booleans and nonfinite values are rejected. Strategies must normalize exactly. Internal elimination can grow large; no speed/scalability claim is made. JSON input is capped at 200,000 bytes, requires `schema_version:1`, rejects unknown/duplicate keys and invalid UTF-8. See [the full schema, proof and attribution](DESIGN.md) and [complete developed audit](examples/demo.json).
 
