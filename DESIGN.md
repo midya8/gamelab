@@ -1,4 +1,4 @@
-# Solver contract and certificates
+# GameLab fixed-matrix method
 
 ## Security LPs and orientation
 
