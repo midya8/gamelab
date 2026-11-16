@@ -21,6 +21,7 @@ jobs:
           python -m gamelab audit examples/audit-input.json > /tmp/audit.json
           python -m gamelab perturbation examples/perturbation-input.json > /tmp/perturbation.json
           python -m gamelab intervals examples/intervals-input.json > /tmp/intervals.json
+          python -m gamelab path examples/path-input.json > /tmp/path.json
   package:
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +29,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python -m pip install setuptools wheel
+      - run: python examples/verify_wheel.py
       - run: python -m pip wheel . --no-deps -w /tmp/wheels
       - run: python -m pip install --target /tmp/installed /tmp/wheels/*.whl
       - run: |
