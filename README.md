@@ -2,12 +2,13 @@
 
 GameLab solves supplied zero-sum payoff tables with at most four actions per player. It uses exact rational arithmetic to show both players' security witnesses, every optimal strategy vertex and the exploitability of a chosen policy pair.
 
-There are two input forms:
+The fixed matrix has two audit extensions:
 
 - A fixed payoff matrix: solve the game, audit policies or compare two matrices under a bounded perturbation. See [DESIGN.md](DESIGN.md).
+- A prescribed policy segment: find the exact minimum gap on that segment and every parameter attaining it. See [PATH.md](PATH.md).
 - A Cartesian payoff box: compute the worst joint deviation gap using one shared table, keeping it separate from separately maximized regrets. See [INTERVALS.md](INTERVALS.md).
 
-The full suite has 53 tests, two reproducible figures and six-module/six-command installed-wheel parity.
+The full suite has 60 tests, two reproducible figures and seven-module/seven-command installed-wheel parity.
 
 ![Minimax audit](assets/minimax-audit.svg)
 
@@ -26,7 +27,7 @@ python -m unittest discover -s tests -v
 python examples/render_demo.py --check
 ```
 
-No API key, network call, third-party runtime package or paid service is needed. `pip install .` installs the importable package. The four fixed-matrix modes emit complete JSON; the two interval modes are described below. Invalid input exits two with empty stdout.
+No API key, network call, third-party runtime package or paid service is needed. `pip install .` installs the importable package. The four fixed-matrix modes emit complete JSON; the interval modes are described below and the policy-segment mode in [PATH.md](PATH.md). Invalid input exits two with empty stdout.
 
 ```python
 from gamelab import solve, audit, perturbation
@@ -76,7 +77,7 @@ It also solves for game value `v`. Row exploitability is `v-min_j(x^T A)_j`; col
 
 ## Verification and limits
 
-The original fixed-matrix suite has 37 tests, retained in the current total of 53. They include all 81 `2x2` integer tables with entries in `{-1,0,1}`, checked against a separate one-dimensional lower-envelope construction; independent permutation-determinant references and every basis residual/slack/status on cyclic/duplicate/constant/nonzero tables; all optimal vertex cross-pairs and convex combinations; attaining coordinate witnesses; all 81 grid policy pairs on a nonzero game; exact affine/permutation/negative-transpose invariances; perturbation equality/near-bound/discontinuity and all 16 signed perturbations of matching pennies; full `4x4` capacity; no input/RNG mutation; parsing/shape/strategy caps and strict CLI failures. Four SVG tests check all 23 numeric cells, four range segments, eight endpoint markers, complete compressed report metadata, hidden-basis tampering and byte-exact regeneration.
+The original fixed-matrix suite has 37 tests, retained in the current total of 60. They include all 81 `2x2` integer tables with entries in `{-1,0,1}`, checked against a separate one-dimensional lower-envelope construction; independent permutation-determinant references and every basis residual/slack/status on cyclic/duplicate/constant/nonzero tables; all optimal vertex cross-pairs and convex combinations; attaining coordinate witnesses; all 81 grid policy pairs on a nonzero game; exact affine/permutation/negative-transpose invariances; perturbation equality/near-bound/discontinuity and all 16 signed perturbations of matching pennies; full `4x4` capacity; no input/RNG mutation; parsing/shape/strategy caps and strict CLI failures. Four SVG tests check all 23 numeric cells, four range segments, eight endpoint markers, complete compressed report metadata, hidden-basis tampering and byte-exact regeneration.
 
 The fixed-matrix installed checks match all four complete CLI JSON outputs and five original modules outside checkout; the interval extension adds a sixth module and two commands. CI runs Python 3.10-3.13 plus a separate package parity job, reproduces demo JSON and regenerates the SVG.
 
@@ -91,3 +92,16 @@ No general-sum, correlated equilibrium, extensive-form/hidden-information game, 
 `interval_audit(lower, upper, row_strategy, column_strategy)` uses signed support coefficients for every pure reply pair to compute the exact worst joint deviation gap over a full Cartesian payoff box. It retains every coefficient, endpoint choice, contribution and attaining matrix, plus separately maximized deviation gains, expected-payoff extrema, complete endpoint game solves and separate robust-security policies. `python -m gamelab interval-demo` and `python -m gamelab intervals examples/intervals-input.json` emit the complete audits.
 
 The shared-entry control has worst joint gap one but separate worst-regret sum two. A full 2x2 unit box with uniform fixed policies has joint worst gap 1/2 versus separate sum one. A one-action game has value-range width 100 but gap zero. These are deterministic supplied intervals, not confidence intervals or statistical independence assumptions. The robust-security pair is not claimed to minimize worst joint gap. [Proof, strict schema, full test details, caveats and attribution](INTERVALS.md).
+
+## Exact gap on a supplied policy segment
+
+`path_audit(A, row_start, column_start, row_end, column_end)` interpolates both independent policies using the same parameter. Every pure-action payoff is affine along this segment, so the duality gap is a convex piecewise-affine envelope. The report keeps all line crossings, including inactive ones, full knot audits, interior best-reply ties and the whole closed interval of minimum-gap parameters.
+
+For rock-paper-scissors, restricting both players to the rock-to-paper segment leaves minimum gap `2/3` at parameter `2/3`, despite the full game's zero-gap uniform equilibrium. A separate flat-face control has an entire minimizing interval `[1/3,2/3]`. This is an exact calculation on the prescribed segment, not a global policy search, correlated mixture or learned training trajectory.
+
+```bash
+python -m gamelab path examples/path-input.json
+python examples/verify_wheel.py
+```
+
+Seven path tests include 56 exact cases checked against an independent reply-pair epigraph reference, direct payoff probes, flat intervals, degenerate lines, transformations and strict CLI failures. The wheel verifier runs all 60 tests outside checkout, checks seven module origins before and after, matches seven complete module CLI reports and regenerates both unchanged figures. [Derivation, report fields, schema, controls and limits](PATH.md).

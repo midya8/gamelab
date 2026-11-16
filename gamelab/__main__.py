@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import sys
-from . import solve,audit,perturbation,demo,interval_audit,interval_demo
+from . import solve,audit,perturbation,demo,interval_audit,interval_demo,path_audit
 
 
 def pairs(items):
@@ -17,18 +17,19 @@ def main():
         args=sys.argv[1:]
         if args==['demo']:result=demo()
         elif args==['interval-demo']:result=interval_demo()
-        elif len(args)==2 and args[0] in ('solve','audit','perturbation','intervals'):
+        elif len(args)==2 and args[0] in ('solve','audit','perturbation','intervals','path'):
             raw=Path(args[1]).read_bytes()
             if len(raw)>200000:raise ValueError('input exceeds 200000 bytes')
             x=json.loads(raw.decode('utf-8'),object_pairs_hook=pairs,parse_constant=lambda _:(_ for _ in ()).throw(ValueError('nonfinite JSON')))
             if not isinstance(x,dict) or type(x.get('schema_version')) is not int or x['schema_version']!=1:raise ValueError('schema_version must be integer one')
-            required={'solve':{'payoffs'},'audit':{'payoffs','row_strategy','column_strategy'},'perturbation':{'original','changed'},'intervals':{'lower','upper','row_strategy','column_strategy'}}[args[0]]
+            required={'solve':{'payoffs'},'audit':{'payoffs','row_strategy','column_strategy'},'perturbation':{'original','changed'},'intervals':{'lower','upper','row_strategy','column_strategy'},'path':{'payoffs','row_start','column_start','row_end','column_end'}}[args[0]]
             if set(x)!=required|{'schema_version'}:raise ValueError('input schema mismatch')
             if args[0]=='solve':result=solve(x['payoffs'])
             elif args[0]=='audit':result=audit(x['payoffs'],x['row_strategy'],x['column_strategy'])
             elif args[0]=='perturbation':result=perturbation(x['original'],x['changed'])
+            elif args[0]=='path':result=path_audit(x['payoffs'],x['row_start'],x['column_start'],x['row_end'],x['column_end'])
             else:result=interval_audit(x['lower'],x['upper'],x['row_strategy'],x['column_strategy'])
-        else:raise ValueError('usage: python -m gamelab demo | solve FILE | audit FILE | perturbation FILE | intervals FILE | interval-demo')
+        else:raise ValueError('usage: python -m gamelab demo | solve FILE | audit FILE | perturbation FILE | intervals FILE | interval-demo | path FILE')
         print(json.dumps(result,sort_keys=True,indent=2));return 0
     except (ValueError,OSError,RecursionError) as exc:
         print('error: '+str(exc),file=sys.stderr);return 2

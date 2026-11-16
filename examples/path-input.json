@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "payoffs": [[0,-1,1],[1,0,-1],[-1,1,0]],
+  "row_start": [1,0,0],
+  "column_start": [1,0,0],
+  "row_end": [0,1,0],
+  "column_end": [0,1,0]
+}
