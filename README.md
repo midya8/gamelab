@@ -1,6 +1,6 @@
 # Minimax
 
-GameLab solves supplied zero-sum payoff tables with at most four actions per player. It uses exact rational arithmetic to show both players' security witnesses, every optimal strategy vertex and the exploitability of a chosen policy pair.
+This implementation solves supplied zero-sum payoff tables with at most four actions per player. It uses exact rational arithmetic to show both players' security witnesses, every optimal strategy vertex and the exploitability of a chosen policy pair.
 
 The fixed matrix has two audit extensions:
 
@@ -12,7 +12,7 @@ The full suite has 60 tests, two reproducible figures and seven-module/seven-com
 
 ![Minimax audit](assets/minimax-audit.svg)
 
-A score table can be cyclic: one policy defeats a second, loses to a third, and has no meaningful single-policy ranking. Even when a zero-sum game's value is unique, its optimal randomized policy can have an entire continuum of choices. GameLab solves the supplied finite game, shows both players' security witnesses, enumerates all optimal strategy vertices and exposes what a chosen policy pair leaves exploitable.
+A score table can be cyclic: one policy defeats a second, loses to a third, and has no meaningful single-policy ranking. Even when a zero-sum game's value is unique, its optimal randomized policy can have an entire continuum of choices. This implementation solves the supplied finite game, shows both players' security witnesses, enumerates all optimal strategy vertices and exposes what a chosen policy pair leaves exploitable.
 
 This is a dependency-free Python 3.10+ numerical-mechanics project. It does not train agents, collect tournament scores, infer a zero-sum interaction from data or claim a new equilibrium algorithm.
 
@@ -50,7 +50,7 @@ print(audit(rps, [1,0,0], [1,0,0])["duality_gap"])  # '2'
 
 The input `A` is the **row player's payoff**. The row player maximizes `x^T A y`; the column player minimizes it and receives its negative. Randomizations are independent. Rows/columns are ordered action identifiers, not model names inferred from files.
 
-GameLab enumerates basic feasible solutions of each security LP. The row problem is `max v` with `sum x=1`, `x>=0`, `x^T A[:,j]>=v` for every column. The column problem is solved as the row problem on `-A^T`, so its returned internal value is `-v`. The report deliberately names that side `column_negative_game` to keep the sign visible.
+This implementation enumerates basic feasible solutions of each security LP. The row problem is `max v` with `sum x=1`, `x>=0`, `x^T A[:,j]>=v` for every column. The column problem is solved as the row problem on `-A^T`, so its returned internal value is `-v`. The report deliberately names that side `column_negative_game` to keep the sign visible.
 
 For every possible active basis, the report retains selected constraint labels, exact rank/determinant/pivot columns, a solution if nonsingular, all inequality slacks, violated constraints and the singular/infeasible/feasible result. Duplicate feasible vertices merge their distinct bases rather than appearing as different strategies. Both security values agree exactly. A representative equilibrium exports all pure-action payoffs, best-reply ties, probability sums, primal/dual slacks and zero complementary-slackness products.
 
@@ -74,7 +74,7 @@ For any input pair, `audit` returns the full row and column pure-action payoff v
 max_i (A y)_i - min_j (x^T A)_j.
 ```
 
-It also solves for game value `v`. Row exploitability is `v-min_j(x^T A)_j`; column exploitability is `max_i(Ay)_i-v`. These nonnegative security losses sum to the same gap but generally differ from the two deviation gains. GameLab uses the **sum convention**, not half the gap. Gap zero is equivalent to equilibrium for the supplied zero-sum matrix.
+It also solves for game value `v`. Row exploitability is `v-min_j(x^T A)_j`; column exploitability is `max_i(Ay)_i-v`. These nonnegative security losses sum to the same gap but generally differ from the two deviation gains. This implementation uses the **sum convention**, not half the gap. Gap zero is equivalent to equilibrium for the supplied zero-sum matrix.
 
 `perturbation(A,B)` retains both complete solutions, all entry changes and locations attaining `epsilon=max_ij |B_ij-A_ij|`. It audits the old representative pair under the new table and reports exact slacks for `|v(B)-v(A)|<=epsilon`, each old player's transferred exploitability at most `2*epsilon`, and the stronger pair gap bound `2*epsilon` (not four). These deterministic inequalities do not turn empirical score errors into confidence intervals. No bound on strategy-coordinate changes is claimed. The pair bound can be approached: `A=[[0,d],[-d,0]]`, `B=[[0,d-1],[1-d,0]]`, `0<d<1`, has epsilon one and old-pair gap `2-2d`.
 
