@@ -1,4 +1,4 @@
-# GameLab
+# Minimax
 
 GameLab solves supplied zero-sum payoff tables with at most four actions per player. It uses exact rational arithmetic to show both players' security witnesses, every optimal strategy vertex and the exploitability of a chosen policy pair.
 
@@ -15,6 +15,9 @@ The full suite has 60 tests, two reproducible figures and seven-module/seven-com
 A score table can be cyclic: one policy defeats a second, loses to a third, and has no meaningful single-policy ranking. Even when a zero-sum game's value is unique, its optimal randomized policy can have an entire continuum of choices. GameLab solves the supplied finite game, shows both players' security witnesses, enumerates all optimal strategy vertices and exposes what a chosen policy pair leaves exploitable.
 
 This is a dependency-free Python 3.10+ numerical-mechanics project. It does not train agents, collect tournament scores, infer a zero-sum interaction from data or claim a new equilibrium algorithm.
+
+The repository is now `minimax`. The Python import and CLI names stay
+`gamelab` for compatibility with existing scripts.
 
 ## Run
 
